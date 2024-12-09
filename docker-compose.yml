@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  sql-injection-app:
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    container_name: sql-injection-challenge
+    restart: unless-stopped
+
